@@ -305,6 +305,37 @@
 >           }
 >       }
 >   ```
+>   
+
+**删除任务**
+
+> ```java
+> /**
+> *长按item
+> */
+> //数据库中删除
+> @Override
+>             public void setLongClickListener(View view) {
+>             ...
+>                 if(targets!=null){
+>                     for(Target target: targets){
+>                         target.delete();
+>                     }
+>                 }
+>             }
+> ```
+>
+> ```java
+> //RecyclerView中删除
+> @Override
+>             public void setLongClickListener(View view) {
+>                 addViewed.remove(rvAddNewView.getChildLayoutPosition(view));
+>                 addDataAdapter.notifyDataSetChanged();
+>                ...
+>             }
+> ```
+>
+> 
 # 心得体会
 
 > 首先，还是太菜了.....
