@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToLoginActivity"
+    android:orientation="vertical"
+    android:background="#000"
+    android:padding="50dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/register"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/r_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginTop="60dp"
+        android:background="#4BF6EFEF">
+
+        <EditText
+            android:id="@+id/r_et_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/r_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="30dp"
+        android:background="#4BF6EFEF">
+
+        <EditText
+            android:id="@+id/r_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/r_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:background="@drawable/button_one_color"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱注册"
+            android:background="#00000000"
+            android:textColor="#B5F6F5F1"/>
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账户"
+            android:background="#00000000"
+            android:textColor="#B5F6F5F1"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

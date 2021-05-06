@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="sign_in">立即注册</string>
+    <string name="Register">注册</string>
+</resources>
